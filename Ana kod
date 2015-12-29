@@ -1,0 +1,14 @@
+
+
+void setup() {           //ana kurulum...
+
+  pinMode(13, OUTPUT);  //13.dijital pinimizin çıkış pini olduğunu tanımladık
+}
+
+
+void loop() {           //ana dögü...
+  digitalWrite(13, HIGH); //13.dijital pinimize HIGH yani lojik 1 veriyoruz
+  delay(1000);            //arduinomuza 1000 milisaniye yani 1 saniye beklemesini söylüyoruz
+  digitalWrite(13, LOW);  //13.dijital pinimize LOW yani lojik 0 veriyoruz  
+  delay(1000); //arduinomuza tekrar 1 saniye beklemesini söylüyoruz eğer buraya bir delay koymazsak ledimiz her zaman HIGH yani lojik 1 olur çükü bu bir döngü  
+}                                                                                        
